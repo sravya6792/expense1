@@ -12,7 +12,7 @@ find "$log_directory" -name "*.log" -type f -mtime +$days -delete
 #!/bin/bash
 
 # Define the path to the log files
-log_directory="/home/ec2-user/logs"
+log_directory="/home/ec2-user/"
 
 # List log files and prompt for confirmation before deletion
 echo "The following log files will be deleted:"
