@@ -31,3 +31,13 @@ then
 else
    echo "$package installed"&>>LOG_FILE
 fi
+dnf module disable nodejs:18 -y
+validate $? "disable nodejs"
+
+dnf module enable nodejs:20 -y
+validate $? "disable nodejs"
+dnf install nodejs -y
+validate $? "install nodejs"
+
+useradd expense
+validate $? "adding user"
