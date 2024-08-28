@@ -56,7 +56,7 @@ curl -o /tmp/backend.zip https://expense-builds.s3.us-east-1.amazonaws.com/expen
 validate $? "download"
 cd /app
 rm -rf /app/*
-unzip /tmp/backend.zip &>>$LOG_FILe
+unzip /tmp/backend.zip &>>$LOG_FILE
 
 npm install 
 cp /home/ec2-user/expense1/backend.service /etc/systemd/system/backend.service
