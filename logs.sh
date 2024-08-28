@@ -1,4 +1,4 @@
-log_directory="/home-ec2-user/logs"
+log_directory="/home/ec2-user/logs"
 
 # Number of days
 days=7
