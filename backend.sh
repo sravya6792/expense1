@@ -59,7 +59,7 @@ rm -rf /app/*
 unzip /tmp/backend.zip &>>$LOG_FILe
 
 npm install 
-cp /home/ec2-user/expense1/backends.service.txt /etc/systemd/system/backends.service.txt
+cp /home/ec2-user/expense1/backend.service /etc/systemd/system/backend.service
 
 
  dnf install mysql -y
