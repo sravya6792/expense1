@@ -31,7 +31,7 @@ then
 else
    echo "$package installed"&>>LOG_FILE
 fi
-dnf install nginx -y 
+dnf install nginx -y &>>LOG_FILE
 validate $? "ngnix is"
 
 systemctl enable nginx
