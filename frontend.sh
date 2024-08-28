@@ -45,4 +45,4 @@ validate $? "download"
 cd /usr/share/nginx/html
 validate $? "change"
 unzip /tmp/frontend.zip
-validate $? "unzip is
+validate $? "unzip is"
