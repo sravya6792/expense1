@@ -46,4 +46,29 @@ useradd expense &>>$LOG_FILE
 validate $? "adding user"
 else
    echo "user already exists"
-fi   
+fi  
+
+mkdir /app
+validate $? "directory"
+
+curl -o /tmp/backend.zip https://expense-builds.s3.us-east-1.amazonaws.com/expense-backend-v2.zip
+
+validate $? "download"
+cd /app
+rm -rf /app/*
+unzip /tmp/backend.zip &>>$LOG_FILe
+
+npm install 
+cp /home/ec2-user/expense1/backend.service/etc/systemd/system/backend.service
+
+
+ dnf install mysql -y
+
+ validate $? "mysql is"
+ mysql -h mysql.daws83s.shop -uroot -pExpenseApp@1 < /app/schema/backend.sql
+ systemctl daemon-reload
+ validate $? "daemon is"
+ systemctl enable backend
+ validate $? "enable is"
+ systemctl restart backend
+ validate $? "restart is"
