@@ -46,3 +46,4 @@ useradd expense &>>$LOG_FILE
 validate $? "adding user"
 else
    echo "user already exists"
+fi   
