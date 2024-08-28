@@ -16,9 +16,9 @@ validate()
 {
     if [ $? -ne 0 ]
     then
-        echo  -e "$2....$R is not installed $N"| tee -a $LOG_FILE
+        echo  -e "$2....$R is not success $N"| tee -a $LOG_FILE
     else
-        echo  -e "$2...$G is installed  $N"| tee -a $LOG_FILE
+        echo  -e "$2...$G is success  $N"| tee -a $LOG_FILE
 
     fi        
 }
@@ -38,3 +38,11 @@ systemctl enable nginx
 validate $? "enable nginx is "
 systemctl start nginx
 validate $? "start engnx is "
+rm -rf /usr/share/nginx/html/*
+
+curl -o /tmp/frontend.zip https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
+validate $? "download"
+cd /usr/share/nginx/html
+validate $? "change"
+unzip /tmp/frontend.zip
+validate $? "unzip is
