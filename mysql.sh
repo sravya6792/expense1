@@ -1,4 +1,5 @@
 
+
 #!/bin/bash
 userdata=$(id -u)
 R="\e[31m"
@@ -38,8 +39,22 @@ systemctl enable mysqld
 validate $? "installing mysql server is enabled or not"
 systemctl start mysqld
 validate $? "installing mysql server is started or not"
+mysql -h mysql.daws83s.shop -u root -pExpenseApp@1 -e 'show databases;'
+if [ $? -ne 0 ]
+then 
+    echo "mysql root is not setup"
+
 mysql_secure_installation --set-root-pass ExpenseApp@1
 validate $? "setting up root password "
+else
+   echo "mysl is already setup"
+
+fi
+
+
+
+
+
 
 
 
