@@ -46,3 +46,8 @@ cd /usr/share/nginx/html
 validate $? "change"
 unzip /tmp/frontend.zip
 validate $? "unzip is"
+
+cp /home/ec2-user/expense1/expense.conf /etc/nginx/default.d/expense.conf
+
+systemctl restart nginx
+validate $? "restart is "
