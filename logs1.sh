@@ -9,3 +9,4 @@ fi
 
 file=$(find $source -name "*.log" -mtime +14)
 echo "$file"
+rm -rf $file
