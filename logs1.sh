@@ -5,5 +5,5 @@ then
 else
    echo "$source director not exists"
 fi    
-files=$(find $souce -name "*.log")
+files=$(find $source -name "*.log")
 rm -rf *.log
