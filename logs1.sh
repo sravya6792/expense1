@@ -10,6 +10,6 @@ else
 
 
 fi
-file=$(find $source -name "*.logs")    
+file=$(find $source -name "*.log")    
 
 echo "$file"
