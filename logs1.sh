@@ -7,5 +7,5 @@ else
     echo "$source  not exists"
 fi
 
-file=$(find $source -name "*.log" -mtime+14)
+file=$(find $source -name "*.log" -mtime +14)
 echo "$file"
