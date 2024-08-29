@@ -1,4 +1,7 @@
 source="/home/ec2-user/logs/"
+backup="/home/ec2-user/backup/"
+mkdir -p backup
+
 if [ -d $source ]
 then 
  echo "$source directory exists"
@@ -7,4 +10,5 @@ else
 fi    
 files=$(find $source -name "*.log")
 echo $files
+mv $files $backup
 rm -rf $files
