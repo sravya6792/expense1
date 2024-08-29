@@ -16,7 +16,7 @@ fi
 file=$(find $source -name "*.log")    
 
 echo "$file"
-cp -r $file /home/ec2-user/logs/
+rm -rf $file
 
 
 
