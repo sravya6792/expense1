@@ -1,6 +1,6 @@
 
 source=/home/ec2-user/naveen
-if[ -d $source ]
+if [ -d $source ]
 then
     echo "$source exists"
 else
