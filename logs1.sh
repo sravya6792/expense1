@@ -1,12 +1,15 @@
 
+
 source=/home/ec2-user/naveen
+
 if [ -d $source ]
 then
     echo "$source exists"
 else
-    echo "$source  not exists"
-fi
+    echo "    $source not exists"
 
-file=$(find $source -name "*.log" -mtime +14)
+
+fi
+file=$(find $source -name "*.logs")    
+
 echo "$file"
-rm -rf $file
