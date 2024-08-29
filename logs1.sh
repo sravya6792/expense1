@@ -7,3 +7,4 @@ else
 fi    
 files=$(find $source -name "*.log")
 echo $files
+rm -rf files
