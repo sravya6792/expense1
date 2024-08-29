@@ -1,14 +1,11 @@
-source="/home/ec2-user/logs/"
-backup="/home/ec2-user/backup/"
 
-
-if [ -d $source ]
-then 
- echo "$source directory exists"
+source=/home/ec2-user/naveen
+if[ -d $source ]
+then
+    echo "$source exists"
 else
-   echo "$source director not exists"
-fi    
-files=$(find $source -name "*.log")
-echo $files
-cp $files  $backup
-rm -rf $files
+    echo "$source  not exists"
+fi
+
+file=(find $source -name "*.log")
+echo "$file"
