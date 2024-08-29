@@ -1,6 +1,8 @@
 
 
 source=/home/ec2-user/naveen
+tar -cvzf backup.tar.gz /home/ec2-user/logs
+
 
 if [ -d $source ]
 then
