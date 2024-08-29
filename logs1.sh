@@ -13,4 +13,3 @@ fi
 file=$(find $source -name "*.logs")    
 
 echo "$file"
-rm -rf $file
