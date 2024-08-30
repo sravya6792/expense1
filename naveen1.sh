@@ -21,8 +21,7 @@ else
     echo "$destination not exists"
 fi
 
-
-
-
+file=find -name "*.logs"
+echo $file
 
     
