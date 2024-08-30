@@ -24,7 +24,12 @@ fi
 file=$(find $source -name "*.logs")
 echo $file
 
-zipfile=$destination/nav.zip
+zipfile="$destination/nav.zip"
+
+
+
+
+
 find $source -name "*.logs"|zip "$zipfile" -@
 
 echo $zipfile
