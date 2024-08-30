@@ -7,4 +7,11 @@ then
     echo "$source exists"
 else
        echo "$source  not exists"
-fi       
+fi    
+
+if [ -d $dest ]
+then
+    echo "$dest exists"
+else
+       echo "$dest  not exists"
+fi
