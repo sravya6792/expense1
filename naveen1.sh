@@ -4,6 +4,7 @@ destination=$2
 if[ $# -ne 2 ]
 then
     echo "plz give arguments"
+fi    
 if [ -d $source ]
 then
    echo "$source exists"
