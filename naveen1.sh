@@ -25,7 +25,7 @@ file=$(find $source -name "*.logs")
 echo $file
 
 
-zipfile1="$destination/app-logs.zip"
+zipfile1="$destination/nav-logs.zip"
 
 find ${source} -name "*.log" | zip "$zipfile1" -@
 echo $zipfile
