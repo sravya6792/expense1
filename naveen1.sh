@@ -6,4 +6,13 @@ then
     echo "plz give arguments"
 fi    
 
+if [ -d $source ]
+then
+   echo"$source exists"
+else
+    echo "$source not exists"
+fi
+
+
+
     
