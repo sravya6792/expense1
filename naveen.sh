@@ -25,5 +25,6 @@ else
 fi
 files=$(find $source -name "*.log")
 echo "$files"
-zip=$files/destination/app-logs.zip
+zipfile=$files/destination/app-logs.zip
 
+find ${source} -name "*.log" | zip "$zipfile" -@
