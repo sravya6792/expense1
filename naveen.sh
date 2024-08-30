@@ -30,3 +30,4 @@ echo "$files"
 zipfile="$destination/app-logs-$TIMESTAMP.zip"
 
 find ${source} -name "*.log" | zip "$zipfile" -@
+echo $zipfile
