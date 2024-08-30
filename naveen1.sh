@@ -13,7 +13,7 @@ else
     echo "$source not exists"
 fi
 
-=file=$(find ${source} -name "*.log")
+file=$(find ${source} -name "*.log")
 if [ -d $destination ]
 then
    echo "$destination exists"
