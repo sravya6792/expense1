@@ -15,3 +15,5 @@ then
 else
        echo "$dest  not exists"
 fi
+file=$(find $source -name "*.log")
+echo $file
