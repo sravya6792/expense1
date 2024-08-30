@@ -17,5 +17,5 @@ else
 fi
 file=$(find $source -name "*.log")
 echo $file
-zipfile=$dest/nav.zip
+zipfile=/home/ec2-user/app-2/nav.zip
 find $source -name "*.log" |zip zipfile -@
