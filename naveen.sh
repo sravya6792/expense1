@@ -12,7 +12,7 @@ if [ $# -ne 2 ]
 then
     usage
 fi    
-if [ ! -d $source ]
+if [  -d $source ]
 then
     echo "$source exists"
 else
