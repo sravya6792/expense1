@@ -23,6 +23,8 @@ fi
 
 file=$(find -name "*.logs")
 echo $file
+zipfile=$destination/naveen.zip
+
 
 
 
