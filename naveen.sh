@@ -8,5 +8,5 @@ echo "plz give input and output"
 }
 if [ $# -ne 2 ]
 then
-    usgae
+    usage
 fi    
