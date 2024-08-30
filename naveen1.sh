@@ -24,16 +24,7 @@ fi
 file=$(find $source -name "*.logs")
 echo $file
 
-#zipfile="$destination/app-1.zip"
-zipfile="$destination/app-logs.zip"
 
-
-
-
-
-find ${source}-name "*.logs"| zip "$zipfile" -@
-
-echo $zipfile
 
 
 
