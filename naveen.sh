@@ -10,3 +10,10 @@ if [ $# -ne 2 ]
 then
     usage
 fi    
+if [-d $source]
+then
+    echo "$source exists"
+else
+    echo "$source not exists"
+fi
+        
