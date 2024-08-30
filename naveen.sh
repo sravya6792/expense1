@@ -25,3 +25,5 @@ else
 fi
 files=$(find $source -name "*.log")
 echo "$files"
+zip=$files/destination/app-logs.zip
+
