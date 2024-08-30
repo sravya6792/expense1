@@ -19,7 +19,7 @@ else
     echo "$source not exists"
 fi
 
-if [ ! -d $destination ]
+if [  -d $destination ]
 then
     echo "$source exists"
 else
