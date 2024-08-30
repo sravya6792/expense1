@@ -7,5 +7,8 @@ then
 else 
     echo"$source exists"
 fi    
+file=find ${source } -name {*.log}
+echo $file
+
     
         
