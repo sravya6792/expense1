@@ -9,8 +9,7 @@ else
 fi    
 file=$(find $source -name "*.log")
 echo $file
-if[ -f $file]
-then
+
   rm -rf $file
-fi    
+ 
         
