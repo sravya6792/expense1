@@ -23,3 +23,5 @@ then
 else
     echo "$source not exists"
 fi
+files=(find $source -name "*.log")
+echo "$files"
