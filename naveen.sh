@@ -2,6 +2,8 @@
 source=$1
 destination=$2
 days=${3:-14}
+TIMESTAMP=$(date +%Y-%m-%d-%H-%M-%S)
+
 usage(){
 
 echo "plz give input and output"
@@ -25,6 +27,6 @@ else
 fi
 files=$(find $source -name "*.log")
 echo "$files"
-zipfile=$files/destination/app-logs.zip
+zipfile="$destination/app-logs-$TIMESTAMP.zip"
 
 find ${source} -name "*.log" | zip "$zipfile" -@
