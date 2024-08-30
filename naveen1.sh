@@ -21,10 +21,14 @@ else
     echo "$destination not exists"
 fi
 
-file=$(find -name "*.logs")
+file=$(find $source -name "*.logs")
 echo $file
-zipfile=$destination/naveen.zip
+
+zipfile=$destination/nav.zip
+find $source -name "*.logs"|zip "$zipfile" @
+
 echo $zipfile
+
 
 
 
