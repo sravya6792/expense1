@@ -14,5 +14,15 @@ else
 fi
 
 
+if [ -d $destination ]
+then
+   echo "$destination exists"
+else
+    echo "$destination not exists"
+fi
+
+
+
+
 
     
