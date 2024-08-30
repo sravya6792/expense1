@@ -24,13 +24,15 @@ fi
 file=$(find $source -name "*.logs")
 echo $file
 
-zipfile="$destination/nav.zip"
+zipfile="$destination/app-1.zip"
 
 
 
 
 
-find ${source} -name "*.logs"| zip "$zipfile" -@
+find ${source}
+
+ -name "*.logs"| zip "$zipfile" -@
 
 echo $zipfile
 
