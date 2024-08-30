@@ -8,7 +8,7 @@ fi
 
 if [ -d $source ]
 then
-   echo"$source exists"
+   echo "$source exists"
 else
     echo "$source not exists"
 fi
