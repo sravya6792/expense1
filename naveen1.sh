@@ -30,7 +30,7 @@ zipfile="$destination/nav.zip"
 
 
 
-find $source -name "*.logs"|zip "$zipfile" -@
+find ${source} -name "*.logs"| zip "$zipfile" -@
 
 echo $zipfile
 
