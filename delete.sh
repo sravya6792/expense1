@@ -1,6 +1,6 @@
 #!/bin/bash
 source=/home/ec2-user/hello
-if [-d $source ]
+if [ -d $source ]
 then
     echo"$source exists"
 
